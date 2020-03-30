@@ -1,0 +1,13 @@
+{
+  "swagger": {
+    "outputDirectory": ".",
+    "entryFile": "./src/app.ts",
+    "version": "v1",
+    "name": "PerfAnalytics API"
+  },
+  "routes": {
+    "basePath": "/",
+    "entryFile": "./src/app.ts",
+    "routesDir": "./src"
+  }
+}

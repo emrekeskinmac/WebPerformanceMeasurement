@@ -1,0 +1,28 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "build",
+    "module": "commonjs",
+    "target": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "typeRoots": [
+      "typings"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
+  "paths": {
+    "@controllers": [
+      "src/Controllers"
+    ],
+    "@repository": [
+      "src/Repository"
+    ]
+  }
+}

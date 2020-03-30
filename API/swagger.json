@@ -1,0 +1,230 @@
+{
+	"basePath": "/",
+	"consumes": [
+		"application/json"
+	],
+	"definitions": {
+		"Resource": {
+			"properties": {
+				"t": {
+					"type": "string"
+				},
+				"e": {
+					"type": "string"
+				},
+				"c": {
+					"type": "number",
+					"format": "double"
+				},
+				"h": {
+					"type": "number",
+					"format": "double"
+				}
+			},
+			"required": [
+				"t",
+				"e",
+				"c",
+				"h"
+			],
+			"type": "object",
+			"additionalProperties": true
+		},
+		"PostInputCollectDTO": {
+			"properties": {
+				"t": {
+					"type": "number",
+					"format": "double"
+				},
+				"r": {
+					"type": "number",
+					"format": "double"
+				},
+				"e": {
+					"type": "number",
+					"format": "double"
+				},
+				"n": {
+					"type": "number",
+					"format": "double"
+				},
+				"d": {
+					"items": {
+						"$ref": "#/definitions/Resource"
+					},
+					"type": "array"
+				},
+				"y": {
+					"type": "string"
+				},
+				"o": {
+					"type": "number",
+					"format": "double"
+				},
+				"l": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"t",
+				"r",
+				"e",
+				"n",
+				"d",
+				"y",
+				"o",
+				"l"
+			],
+			"type": "object",
+			"additionalProperties": true
+		},
+		"GetOutputCollectDTO": {
+			"properties": {
+				"date": {
+					"type": "number",
+					"format": "double"
+				},
+				"min": {
+					"type": "number",
+					"format": "double"
+				},
+				"ttfb": {
+					"type": "number",
+					"format": "double"
+				},
+				"dload": {
+					"type": "number",
+					"format": "double"
+				},
+				"load": {
+					"type": "number",
+					"format": "double"
+				},
+				"paint": {
+					"type": "number",
+					"format": "double"
+				}
+			},
+			"required": [
+				"date",
+				"min",
+				"ttfb",
+				"dload",
+				"load",
+				"paint"
+			],
+			"type": "object",
+			"additionalProperties": true
+		},
+		"InputSeed": {
+			"properties": {
+				"size": {
+					"type": "number",
+					"format": "double"
+				}
+			},
+			"required": [
+				"size"
+			],
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"info": {
+		"title": "PerfAnalytics API",
+		"version": "v1",
+		"description": "PerfAnalytics API v1",
+		"license": {
+			"name": "MIT"
+		}
+	},
+	"paths": {
+		"/collect": {
+			"post": {
+				"operationId": "Post",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				"tags": [
+					"collect"
+				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "body",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/PostInputCollectDTO"
+						}
+					}
+				]
+			},
+			"get": {
+				"operationId": "Get",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"schema": {
+							"items": {
+								"$ref": "#/definitions/GetOutputCollectDTO"
+							},
+							"type": "array"
+						}
+					}
+				},
+				"tags": [
+					"collect"
+				],
+				"security": [],
+				"parameters": []
+			}
+		},
+		"/seed": {
+			"post": {
+				"operationId": "Post",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				"tags": [
+					"seed"
+				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "body",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/InputSeed"
+						}
+					}
+				]
+			}
+		}
+	},
+	"produces": [
+		"application/json"
+	],
+	"swagger": "2.0",
+	"securityDefinitions": {}
+}

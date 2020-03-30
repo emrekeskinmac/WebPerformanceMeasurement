@@ -1,0 +1,20 @@
+{
+  "name": "web-performance-analytics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "web": "cd Dashboard && yarn install && yarn start",
+    "api": "cd API &&  yarn install && yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emrekeskinmac/WebPerformanceAnalytics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emrekeskinmac/WebPerformanceAnalytics/issues"
+  },
+  "homepage": "https://github.com/emrekeskinmac/WebPerformanceAnalytics#readme"
+}
