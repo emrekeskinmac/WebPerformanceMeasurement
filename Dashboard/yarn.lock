@@ -795,15 +795,6 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@use-hooks/axios@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@use-hooks/axios/-/axios-1.3.1.tgz#d89e4fd5a9dee97d45c7fb4b10ff3c6fcc897337"
-  integrity sha512-hzNIf7P736L6gdbHY1tYkI0Pu3gz2RaVi6N7URx0B0bp1qd0fq+2JfpNru5c6VxUY/rra6NfgAi8Nz4TtYVlDA==
-  dependencies:
-    axios "^0.19.0"
-    react "^16.8.1"
-    react-dom "^16.8.1"
-
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -969,9 +960,9 @@ accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
     negotiator "0.6.2"
 
 acorn@^6.2.1:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.0.tgz#b659d2ffbafa24baf5db1cdbb2c94a983ecd2784"
-  integrity sha512-gac8OEcQ2Li1dxIEWGZzsp2BitJxwkwcOm0zHAJLcPJaVvm58FRnk6RkuLRpU1EujipU2ZFODv2P9DLMfnV8mw==
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
+  integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
 
 ajv-errors@^1.0.0:
   version "1.0.1"
@@ -1178,7 +1169,7 @@ axios-hooks@^1.9.0:
     "@babel/runtime" "7.7.6"
     lru-cache "5.1.1"
 
-axios@^0.19.0, axios@^0.19.1:
+axios@^0.19.1:
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.1.tgz#8a6a04eed23dfe72747e1dd43c604b8f1677b5aa"
   integrity sha512-Yl+7nfreYKaLRvAvjNPkvfjnQHJM1yLBY3zhqAwcJSwR/6ETkanUgylgtIvkvz0xJ+p/vZuNw8X7Hnb7Whsbpw==
@@ -4474,7 +4465,7 @@ react-c3js@^0.1.20:
   dependencies:
     c3 "^0.4.11"
 
-react-dom@^16.8.1, react-dom@^16.8.2:
+react-dom@^16.8.2:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.12.0.tgz#0da4b714b8d13c2038c9396b54a92baea633fe11"
   integrity sha512-LMxFfAGrcS3kETtQaCkTKjMiifahaMySFDn71fZUNpPHZQEzmk/GiAeIT8JSOrHB23fnuCOMruL2a8NYlw+8Gw==
@@ -4509,7 +4500,7 @@ react-text-mask@^5.4.1:
   dependencies:
     prop-types "^15.5.6"
 
-react@^16.8.1, react@^16.8.2:
+react@^16.8.2:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.12.0.tgz#0c0a9c6a142429e3614834d5a778e18aa78a0b83"
   integrity sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA==
