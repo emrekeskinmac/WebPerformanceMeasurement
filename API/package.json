@@ -22,7 +22,7 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.4.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongoose": "^5.7.5",
     "reflect-metadata": "^0.1.10",
     "swagger-ui-express": "^4.0.2",
